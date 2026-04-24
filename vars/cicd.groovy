@@ -1,8 +1,9 @@
 def gitDownload(repo)
 {
-     git "https://github.com/IntelliqDevops/${repo}.git"
+    git branch: "${BRANCH_NAME}", url: "https://github.com/IntelliqDevops/${repo}.git"
 
 }
+
 
 def buildArtifact()
 {
